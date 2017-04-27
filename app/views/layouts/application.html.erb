@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<ul>
+        <li><%= link_to "Dogs",   '#' %></li>
+        <li><%= link_to "Id1",   '#' %></li>
+        <li><%= link_to "Create", '#' %></li>
+    </ul>
+    <%= link_to "Create New Dog", '#'%>
+	<div class="container">
+      <%= yield %>
+    </div>
 
 </body>
 </html>
